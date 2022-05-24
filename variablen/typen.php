@@ -6,6 +6,7 @@
 
 // string
 $var = 'string';
+echo gettype($var) . '<br>';
 
 // integer
 $var = 5;
