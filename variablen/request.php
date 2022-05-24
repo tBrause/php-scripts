@@ -1,4 +1,7 @@
 <?php
+# 
+##############################
+
 # REQUEST
 $var = trim(substr(@$_REQUEST['var'], 0, 2));
 echo $var . ' ' . gettype($var) . '<br>';

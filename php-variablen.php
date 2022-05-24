@@ -1,6 +1,7 @@
 <?php
 
 # Magische Konstanten
+##############################
 echo '<h3>Magische Konstanten</h3>';
 echo 'Projektverzeichnis: ' . __DIR__ . '<br>';
 echo 'Datei auf dem Gerät: ' . __FILE__ . '<br>';
@@ -9,6 +10,7 @@ echo 'Anzahl der Zeilen in der Datei: ' . __LINE__ . '<br>';
 
 
 # $_SERVER
+##############################
 echo '<h3>$_SERVER</h3>';
 
 echo 'Produkoll: ' . $_SERVER['REQUEST_SCHEME'] . '<br>';

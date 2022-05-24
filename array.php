@@ -1,43 +1,51 @@
 <?php
 
-// ARRAY öffnen
+# ARRAY öffnen
+##############################
 $array_elemente = array();
 // oder
 $array_elemente = [];
 
-// WERTE einem ARRAY zuweisen
+# WERTE einem ARRAY zuweisen
+##############################
 $array_elemente = array('eins', 'zwei');
 // oder
 $array_elemente = ['eins', 'zwei'];
 
-// ANZAHL der WERTE in einem ARRAY
+# ANZAHL der WERTE in einem ARRAY
+##############################
 $array_elemente_count = count($array_elemente);
 
-// WERTE HINZUFÜGEN
+# WERTE HINZUFÜGEN
+##############################
 array_push($array_elemente, 'drei', 'vier');
 print_r($array_elemente);
 
-// ist ein WERT im ARRAY vorhanden
+# ist ein WERT im ARRAY vorhanden
+##############################
 $search = 'eins';
 if (in_array($search, $array_elemente)) {
     echo "eins enthalten<br>";
 }
 
-// FOREACH ARRAY
+# FOREACH ARRAY
+##############################
 echo '<ul>';
 foreach ($array_elemente as $element) {
     echo '<li>' . $element . '</li>';
 }
 echo '</ul>';
 
-// FOR ARRAY
+# FOR ARRAY
+##############################
 echo '<ul>';
 for ($index = 0; $index < count($array_elemente); $index++) {
     echo '<li>' . $array_elemente[$index] . '</li>';
 }
 echo '</ul>';
 
-#### ARRAYS mit Schlüßeln
+# ARRAYS mit Schlüsseln
+##############################
 
 $array_elemente_key = array('eins' => 'e', 'zwei' => 'z');
 

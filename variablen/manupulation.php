@@ -1,5 +1,6 @@
 <?php
 # Typen von PHP Variablen
+##############################
 # string, integer, double, boolean, array, object
 
 // string in integer
@@ -31,5 +32,3 @@ class foo
 }
 $var = new foo;
 echo gettype($var) . '<br>';
-
-//$str = trim(strval($str));

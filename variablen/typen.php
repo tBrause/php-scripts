@@ -1,12 +1,11 @@
 <?php
 # Typen von PHP Variablen
+##############################
 # string, integer, double, boolean, array, object
+# Type der Variable : gettype($var)
 
 // string
 $var = 'string';
-
-// Type der Variable
-echo gettype($var) . '<br>';
 
 // integer
 $var = 5;
@@ -32,17 +31,20 @@ class foo
 $var = new foo;
 echo gettype($var) . '<br>';
 
-// Typen festlegen
+
+# Typen festlegen
+##############################
+
 echo '<h3>Typen festlegen</h3>';
-// Zeichenkette
+// strint
 $var = (string) 4.2;
 echo $var . ' ' . gettype($var) . '<br>';
 
-// Ganzzahl
+// integer
 $var = (int) 4.2;
 echo $var . ' ' . gettype($var) . '<br>';
 
-// Fließkommazahl
+// float
 $var = (float) 4.2;
 echo $var . ' ' . gettype($var) . '<br>';
 
@@ -50,7 +52,7 @@ $var = (float) 4;
 echo $var . ' ' . gettype($var) . '<br>';
 
 
-// Boolescher Wert
+// boolean
 $var = (bool) false;
 echo $var . ' ' . gettype($var) . '<br>';
 
