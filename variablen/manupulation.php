@@ -2,11 +2,9 @@
 # Typen von PHP Variablen
 # string, integer, double, boolean, array, object
 
-// string
-$var = 'string';
-
-// Type der Variable
-echo gettype($var) . '<br>';
+// string in integer
+$var = '5';
+echo intval($var) . '<br>';
 
 // integer
 $var = 5;
@@ -33,3 +31,5 @@ class foo
 }
 $var = new foo;
 echo gettype($var) . '<br>';
+
+//$str = trim(strval($str));

@@ -12,7 +12,7 @@ echo gettype($var) . '<br>';
 $var = 5;
 echo gettype($var) . '<br>';
 
-// double
+// double // float
 $var = 5.2;
 echo gettype($var) . '<br>';
 
@@ -31,3 +31,28 @@ class foo
 }
 $var = new foo;
 echo gettype($var) . '<br>';
+
+// Typen festlegen
+echo '<h3>Typen festlegen</h3>';
+// Zeichenkette
+$var = (string) 4.2;
+echo $var . ' ' . gettype($var) . '<br>';
+
+// Ganzzahl
+$var = (int) 4.2;
+echo $var . ' ' . gettype($var) . '<br>';
+
+// Fließkommazahl
+$var = (float) 4.2;
+echo $var . ' ' . gettype($var) . '<br>';
+
+$var = (float) 4;
+echo $var . ' ' . gettype($var) . '<br>';
+
+
+// Boolescher Wert
+$var = (bool) false;
+echo $var . ' ' . gettype($var) . '<br>';
+
+$var = (bool) true;
+echo $var . ' ' . gettype($var) . '<br>';
