@@ -13,8 +13,10 @@ $var = 5;
 echo gettype($var) . '<br>';
 
 // double
-$var = 5.2;
+$var = 5.2256;
+$var2 = 2.3;
 echo gettype($var) . '<br>';
+echo ($var * $var2) . '<br>';
 
 // boolean
 $var = true;
