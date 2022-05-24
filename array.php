@@ -5,9 +5,6 @@ $array_elemente = array();
 // oder
 $array_elemente = [];
 
-// Type der Variable
-echo gettype($array_elemente) . '<br>';
-
 // WERTE einem ARRAY zuweisen
 $array_elemente = array('eins', 'zwei');
 // oder
