@@ -22,3 +22,8 @@ echo 'Datei: ' . $_SERVER['SCRIPT_NAME'] . '<br>';
 echo 'Datei im Internet: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . '<br>';
 echo 'Datei auf dem Gerät: ' . $_SERVER['SCRIPT_FILENAME'] . '<br>';
 echo 'QUERY_STRING: ' . $_SERVER['QUERY_STRING'] . '<br>';
+
+# COOKIE
+##############################
+echo '<h3>$_COOKIE</h3>';
+echo 'COOKIE: ' . $_COOKIE['PHPSESSID'] . '<br>';
