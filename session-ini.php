@@ -1,3 +1,4 @@
+<?php
 function checkSession()
 {
     if (!$_SESSION) {
