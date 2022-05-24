@@ -1,3 +1,4 @@
+<?php
 ################# Klassen laden ###
 function klassenladen($klassenname)
 {

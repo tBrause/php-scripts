@@ -1,3 +1,4 @@
+<?php
 ################# connection to the database ###
 $mysql_host             = "localhost";
 $mysql_user             = "";

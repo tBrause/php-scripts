@@ -1,3 +1,4 @@
+<?php
 ################# Pfade ###
 define('PAHT', '');
 define('IPAHT', 'images');

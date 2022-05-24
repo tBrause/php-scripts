@@ -1,3 +1,4 @@
+<?php
 ################# Fehlermeldungen deaktivieren !!!!
 #error_reporting(0);
 
