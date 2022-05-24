@@ -16,6 +16,10 @@ $array_elemente = ['eins', 'zwei'];
 // ANZAHL der WERTE in einem ARRAY
 $array_elemente_count = count($array_elemente);
 
+// WERTE HINZUFÜGEN
+array_push($array_elemente, 'drei', 'vier');
+print_r($array_elemente);
+
 // ist ein WERT im ARRAY vorhanden
 $search = 'eins';
 if (in_array($search, $array_elemente)) {
