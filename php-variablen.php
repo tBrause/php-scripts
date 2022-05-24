@@ -18,9 +18,9 @@ echo 'HTTP: ' . $_SERVER['HTTP_HOST'] . '<br>';
 echo 'Domain: ' . $_SERVER['SERVER_NAME'] . '<br>';
 echo 'Port: ' . $_SERVER['SERVER_PORT'] . '<br>';
 
-echo 'Datei: ' . $_SERVER['SCRIPT_NAME'] . '<br>';
-echo 'Datei im Internet: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . '<br>';
-echo 'Datei auf dem Gerät: ' . $_SERVER['SCRIPT_FILENAME'] . '<br>';
+echo 'Datei mit Pfad bis zum Hauptverzeichnis: ' . $_SERVER['SCRIPT_NAME'] . '<br>';
+echo 'Datei über HTTP/S: ' . $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'] . '<br>';
+echo 'Datei OS: ' . $_SERVER['SCRIPT_FILENAME'] . '<br>';
 echo 'QUERY_STRING: ' . $_SERVER['QUERY_STRING'] . '<br>';
 
 # COOKIE
