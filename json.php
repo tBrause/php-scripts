@@ -1,8 +1,7 @@
 <?php
-# ARRAY zu JSON Daten
+# ARRAY Daten
 ##############################
-// data strored in array
-$array = array(
+$array_input = array(
     "0" => array(
         "id" => "01",
         "name" => "Olivia Mason",
@@ -22,12 +21,12 @@ $array = array(
 
 # ARRAY zu JSON
 ##############################
-$json = json_encode($array);
+$json_input = json_encode($array_input);
 
 # JSON Datei erstellen
 ##############################
-$bytes = file_put_contents("upload/myfile.json", $json);
-#echo "The number of bytes written are $bytes.<br>";
+$bytes_input = file_put_contents("upload/myfile.json", $json_input);
+#echo "The number of bytes written are $bytes_input.<br>";
 
 #############################################################################
 
