@@ -33,16 +33,26 @@ $bytes = file_put_contents("upload/myfile.json", $json);
 
 # JSON Daten aus Datei
 ##############################
-$json = file_get_contents("upload/myfile.json");
+$json_data = file_get_contents("upload/myfile.json");
 
 # JSON zu ARRAY
 ##############################
-$myarray = json_decode($json, true);
-var_dump($myarray); // prints array
+$json_array = json_decode($json_data, true);
 
+# FOREACH ARRAY
+##############################
+foreach ($json_array as $array) {
+    echo $array["name"] . ' : ';
+    echo $array["designation"] . '<br>';
+}
 echo '<br><br>';
 
+#############################################################################
 
+# JSON mit CURL
+# DAUERT ZU LANGE
+##############################
+/*
 $YourUrl = "upload/myfile.json";
 //  Initiate curl session
 $handle = curl_init();
@@ -58,3 +68,4 @@ curl_close($handle);
 $result = file_get_contents($YourUrl);
 $array = json_decode($result, true);
 var_dump($array);
+*/
