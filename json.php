@@ -34,7 +34,6 @@ $bytes = file_put_contents("upload/myfile.json", $json);
 # JSON Daten aus Datei
 ##############################
 $json = file_get_contents("upload/myfile.json");
-// Converts to an array 
 
 # JSON zu ARRAY
 ##############################
