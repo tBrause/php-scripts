@@ -1,5 +1,6 @@
 <?php
-
+# ARRAY zu JSON Daten
+##############################
 // data strored in array
 $array = array(
     "0" => array(
@@ -19,8 +20,42 @@ $array = array(
     )
 );
 
-// encode array to json
+# ARRAY zu JSON
+##############################
 $json = json_encode($array);
-$bytes = file_put_contents("upload/myfile.json", $json);
 
-echo "The number of bytes written are $bytes.";
+# JSON Datei erstellen
+##############################
+$bytes = file_put_contents("upload/myfile.json", $json);
+#echo "The number of bytes written are $bytes.<br>";
+
+#############################################################################
+
+# JSON Daten aus Datei
+##############################
+$json = file_get_contents("upload/myfile.json");
+// Converts to an array 
+
+# JSON zu ARRAY
+##############################
+$myarray = json_decode($json, true);
+var_dump($myarray); // prints array
+
+echo '<br><br>';
+
+
+$YourUrl = "upload/myfile.json";
+//  Initiate curl session
+$handle = curl_init();
+// Will return the response, if false it prints the response
+curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+// Set the url
+curl_setopt($handle, CURLOPT_URL, $YourUrl);
+// Execute the session and store the contents in $result
+$result = curl_exec($handle);
+// Closing the session
+curl_close($handle);
+
+$result = file_get_contents($YourUrl);
+$array = json_decode($result, true);
+var_dump($array);
