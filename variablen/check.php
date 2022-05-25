@@ -2,28 +2,29 @@
 
 # EMPTY
 ##############################
-// if (empty($var)) {
-if (empty($var) === true) {
-    #if (is_null())
-    echo 'empty false<br>';
+# lange Form = if (empty($var) === true) {
+
+if (empty($var)) {
+    echo 'empty is false<br>';
 }
 
 $var = 3;
 
-// if (!empty($var)) {
-if (empty($var) === false) {
-    echo $var . ' empty true<br>';
+if (!empty($var)) {
+    echo 'empty is true[' . $var . ']<br>';
 }
 
 
 # ISSET
 ##############################
-$check_var = isset($var);
+# lange Form = if (isset($check_var) === true) {
 
-if (isset($check_var) === true) {
-    echo $var . 'true';
+# $check_var = isset($var);
+
+if (isset($check_var)) {
+    echo 'isset is true [' . $check_var . ']<br>';
 }
 
-if (isset($check_var) == 1) {
-    echo $var . 'true';
+if (!isset($check_var)) {
+    echo 'isset is false<br>';
 }
