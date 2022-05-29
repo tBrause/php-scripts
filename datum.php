@@ -34,9 +34,32 @@ echo date('d.m.Y', mktime(0, 0, 0, 12, 13, 2006));
 
 
 # https://www.php.net/manual/de/timezones.php
-$timezones = ['Europe/Berlin', 'Europe/London', 'Europe/Paris', 'Europe/Gibraltar', 'Asia/Hong_Kong', 'America/Curacao', 'Africa/Cairo', 'Asia/Tehran', 'Africa/Casablanca', 'America/Toronto'];
+$timezones = [
+    'Europe/London',
+    'Europe/Paris',
+    'Europe/Berlin',
+    'Africa/Cairo',
+    'Asia/Damascus',
+    'Indian/Maldives',
+    'Asia/Bangkok',
+    'Asia/Hong_Kong',
+    'Australia/Perth',
+    'Australia/Darwin',
+    'Australia/Sydney',
+    'Pacific/Honolulu',
+    'America/Los_Angeles',
+    'America/Lima',
+    'America/Curacao',
+    'America/Toronto',
+    'America/Recife',
+    'Africa/Dakar',
+    'Europe/Madrid',
+    'Europe/Lisbon',
+    'Arctic/Longyearbyen',
+    'Antarctica/Casey'
+];
 
-echo '<ul style="display:flex;">';
+echo '<ul style="display:flex; flex-wrap: wrap;">';
 foreach ($timezones as $tz) {
 
     # DateTimeZone
@@ -48,7 +71,7 @@ foreach ($timezones as $tz) {
     # timeOffset
     $timeOffset = (array)$dateTime;
 
-    echo '<li style="display:block; margin-bottom:30px; min-width:140px;">';
+    echo '<li style="display:block; margin-bottom:30px; min-width:160px; font-family:arial;">';
 
     # timezone
     echo $timeOffset["timezone"] . '<br>';
